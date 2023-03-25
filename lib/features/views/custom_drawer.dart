@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 import '../../models/menu_option.dart';
-import '../widgets/custom_logo.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({
@@ -19,25 +17,32 @@ class MenuDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-            DrawerHeader(
-              decoration: BoxDecoration(color: Color(0xff00A6E0)),
-              child: Column(
-                children:   [
-                  CircleAvatar(
-                    backgroundColor:Color(0xffffffff) ,
-                    radius: 25,
-                    child: Text('Jefry'),
-                  ),
-                  Text('Jefry G Palomino'),
-                  CustomLogo(
-                    fontSize2:fontSize2 ,
-                    color1: Color(0xffffffff),
-                    color2: Color(0xffffffff),
-                    color3: Color(0xff00A6E0),
-                    cicrcleColor: Color(0xffffffff),
-                  ),
-                ],
-              )),
+          Expanded(
+            child: DrawerHeader(
+                decoration: const BoxDecoration(color: Color(0xff00A6E0)),
+                child: Column(
+                  children: const [
+                    CircleAvatar(
+                      backgroundColor: Color(0xffffffff),
+                      radius: 25,
+                      child: Text(
+                        'Jefry',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 19,
+                    ),
+                    Text(
+                      'Jefry G Palomino',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30),
+                    ),
+                  ],
+                )),
+          ),
           ListView.separated(
             separatorBuilder: (context, index) => const Divider(),
             physics: const NeverScrollableScrollPhysics(),
@@ -47,7 +52,7 @@ class MenuDrawer extends StatelessWidget {
               return ListTile(
                 title: Text(menuOptions[i].name),
                 leading: Icon(menuOptions[i].icon),
-                onTap: (){
+                onTap: () {
                   Navigator.pushNamed(context, menuOptions[i].route);
                 },
               );

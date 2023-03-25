@@ -13,14 +13,7 @@ class HomeView extends StatelessWidget {
     const fontSize2 = 32.0;
     final menuOptions = AppRoutes.menuOptions;
     final dniText = TextEditingController();
-    // final List titleList = [
-    //   'Inicio',
-    //   'Triaje',
-    //   'Examenes',
-    //   'Historial',
-    //   'Doctor',
-    //   'Servicios'
-    // ];
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xff00A6E0),
@@ -43,7 +36,7 @@ class HomeView extends StatelessWidget {
             child: Column(
               children: [
                 const ListTile(
-                  title: Text('Agendar cita'),
+                  title: Text('Crear Nueva Nota'),
                 ),
                 CustomInput(
                     hintext: '75142458',
@@ -71,7 +64,7 @@ class HomeView extends StatelessWidget {
                     textEditin: dniText),
                 CustomInput(
                     hintext: 'Juan alvarado',
-                    label: 'Doctor',
+                    label: 'Estudiante',
                     icon: Icon(Icons.medical_services_rounded),
                     keyboardType: TextInputType.text,
                     textEditin: dniText),
@@ -82,8 +75,8 @@ class HomeView extends StatelessWidget {
                     keyboardType: TextInputType.text,
                     textEditin: dniText),
                 CustomInput(
-                    hintext: 'Laparoscopia',
-                    label: 'Servicio',
+                    hintext: 'Ing software',
+                    label: 'Descripcion',
                     icon: Icon(Icons.self_improvement_rounded),
                     keyboardType: TextInputType.text,
                     textEditin: dniText),

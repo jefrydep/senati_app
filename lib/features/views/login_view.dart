@@ -18,6 +18,16 @@ class LoginView extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
+              Text(
+                'Mis Notas',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 30,
+              ),
               _Form(),
               SizedBox(
                 height: 10,
@@ -65,12 +75,11 @@ class _FormState extends State<_Form> {
             height: 40,
           ),
           CustomLogo(
-            color1: Color(0xff000000),
-            color2: Color(0xff00A6E0),
-            color3: Color(0xffffffff),
-            cicrcleColor: Color(0xff00A6E0),
-            
-            fontSize2: fontSize2),
+              color1: Color(0xff000000),
+              color2: Color(0xff00A6E0),
+              color3: Color(0xffffffff),
+              cicrcleColor: Color(0xff00A6E0),
+              fontSize2: fontSize2),
           const SizedBox(
             height: 40,
           ),
@@ -98,10 +107,18 @@ class _FormState extends State<_Form> {
           ),
           const SizedBox(
             height: 20,
+          ),
+          Text('Created by'),
+          Text(
+            'Godofredo Palomino Mayta',
+            style: TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.amber, fontSize: 25),
+          ),
+          SizedBox(
+            height: 20,
           )
         ],
       ),
     );
   }
 }
-
