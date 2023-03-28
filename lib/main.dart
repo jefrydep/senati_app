@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tudoctor_app/features/router/app_routes.dart';
-import 'package:tudoctor_app/features/views/tapbar_view.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
       // },
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
-      theme: ThemeData(useMaterial3: true),
+      // theme: ThemeData(useMaterial3: true),
       // onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }

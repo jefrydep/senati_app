@@ -11,23 +11,23 @@ class TabbarMenu extends StatelessWidget {
         appBar: AppBar(
           bottom: TabBar(tabs: [
             Column(
-              children: [Tab(icon: Icon(Icons.home)), Text('Home')],
+              children: const [Tab(icon: Icon(Icons.home)), Text('Home')],
             ),
             Column(
-              children: [
+              children: const [
                 Tab(icon: Icon(Icons.people_outline)),
                 Text('Alumnos')
               ],
             ),
             Column(
-              children: [Tab(icon: Icon(Icons.book)), Text('Materias')],
+              children: const [Tab(icon: Icon(Icons.book)), Text('Materias')],
             ),
           ]),
         ),
         body: TabBarView(
           children: [
             ListView(
-              children: [
+              children: const [
                 Center(
                   child: Text(
                     'Nuevos Alumnos',
@@ -72,8 +72,8 @@ class TabbarMenu extends StatelessWidget {
                 ),
               ],
             ),
-            Icon(Icons.directions_transit),
-            Icon(Icons.directions_bike),
+            const Icon(Icons.directions_transit),
+            const Icon(Icons.directions_bike),
           ],
         ),
       ),

@@ -20,7 +20,7 @@ class AppRoutes {
         name: 'Pestaña de alumnos',
         screen: const TabbarMenu()),
     MenuOption(
-        route: 'login', icon: Icons.people, name: 'login', screen: LoginView()),
+        route: 'login', icon: Icons.people, name: 'login', screen: const LoginView()),
     MenuOption(
         route: 'triaje',
         icon: Icons.trending_down_sharp,

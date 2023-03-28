@@ -57,7 +57,7 @@ class _FormState extends State<_Form> {
     var fontSize2 = 32.0;
     return Container(
       decoration: BoxDecoration(
-          color: Color(0xffFFFFFF),
+          color: const Color(0xffFFFFFF),
           borderRadius: BorderRadius.circular(11),
           boxShadow: [
             BoxShadow(
@@ -67,7 +67,7 @@ class _FormState extends State<_Form> {
           ]),
       // decoration: const BoxDecoration(color: Colors.red),
       margin: const EdgeInsets.symmetric(horizontal: 30),
-      padding: EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       width: double.infinity,
       child: Column(
         children: [
@@ -75,10 +75,10 @@ class _FormState extends State<_Form> {
             height: 40,
           ),
           CustomLogo(
-              color1: Color(0xff000000),
-              color2: Color(0xff00A6E0),
-              color3: Color(0xffffffff),
-              cicrcleColor: Color(0xff00A6E0),
+              color1: const Color(0xff000000),
+              color2: const Color(0xff00A6E0),
+              color3: const Color(0xffffffff),
+              cicrcleColor: const Color(0xff00A6E0),
               fontSize2: fontSize2),
           const SizedBox(
             height: 40,
@@ -108,13 +108,13 @@ class _FormState extends State<_Form> {
           const SizedBox(
             height: 20,
           ),
-          Text('Created by'),
-          Text(
+          const Text('Created by'),
+          const Text(
             'Godofredo Palomino Mayta',
             style: TextStyle(
                 fontWeight: FontWeight.bold, color: Colors.amber, fontSize: 25),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           )
         ],
